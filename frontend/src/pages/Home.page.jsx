@@ -35,7 +35,7 @@ const HomePage = () => {
             searchData,
             inputMonth: month
         }
-        const items = await axios.get('http://localhost:4001/allData', { params })
+        const items = await axios.get('https://roxille-system-task.onrender.com/allData', { params })
         setAllData(items.data.allData)
     }
 

@@ -28,7 +28,7 @@ const MonthSelect = () => {
       page,
       perPage
     }
-    await axios.get('http://localhost:4001/allData', { params }).then((data) => {
+    await axios.get('https://roxille-system-task.onrender.com/allData', { params }).then((data) => {
       setCurrentTransactions(data.data.allData.transactions)
       setStatistics(data.data.allData.statistics)
       setBarChart(data.data.allData.barChart)

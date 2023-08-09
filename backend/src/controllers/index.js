@@ -157,13 +157,13 @@ exports.getAllData = async (req, res) => {
         inputMonth
     }
 
-    const allTransactions = await axios.get("http://localhost:4001/allTransactions",{ params })
+    const allTransactions = await axios.get("https://roxille-system-task.onrender.com/allTransactions",{ params })
 
-    const statistics = await axios.get("http://localhost:4001/statistics",{ params:params1 })
+    const statistics = await axios.get("https://roxille-system-task.onrender.com/statistics",{ params:params1 })
 
-    const barChart = await axios.get("http://localhost:4001/barchart",{ params:params1 });
+    const barChart = await axios.get("https://roxille-system-task.onrender.com/barchart",{ params:params1 });
 
-    const pieChart = await axios.get("http://localhost:4001/piechart", {params:params1});
+    const pieChart = await axios.get("https://roxille-system-task.onrender.com/piechart", {params:params1});
 
     const result = {
       transactions: allTransactions.data.transactions,

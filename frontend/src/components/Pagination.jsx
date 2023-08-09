@@ -38,7 +38,7 @@ const PaginationComp = () => {
             searchData,
             inputMonth: month
         }
-        await axios.get('http://localhost:4001/allTransactions', { params }).then((data) => {
+        await axios.get('https://roxille-system-task.onrender.com/allTransactions', { params }).then((data) => {
             setCurrentTransactions(data.data.transactions)
         }).finally(() => setTableLoading(false))
     }
@@ -52,7 +52,7 @@ const PaginationComp = () => {
                 searchData,
                 inputMonth: month
             }
-            await axios.get('http://localhost:4001/allTransactions', { params }).then((data) => {
+            await axios.get('https://roxille-system-task.onrender.com/allTransactions', { params }).then((data) => {
                 setCurrentTransactions(data.data.transactions)
             }).finally(() => setTableLoading(false))
         }
@@ -67,7 +67,7 @@ const PaginationComp = () => {
                 searchData,
                 inputMonth: month
             }
-            await axios.get('http://localhost:4001/allTransactions', { params }).then((data) => {
+            await axios.get('https://roxille-system-task.onrender.com/allTransactions', { params }).then((data) => {
                 setCurrentTransactions(data.data.transactions)
             }).finally(() => setTableLoading(false))
         }
